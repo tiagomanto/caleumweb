@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        article.artigo1 section li:nth-child(2n) { color: green; } /* elementos pares */
+        article.artigo1 section li:nth-child(2n+1) { color: blue; }/* elementos impares */
+        article.artigo2 section li:nth-child(2n+1){color:red}
+        article.artigo2 section li:nth-child(2n+1){color:blueviolet}
+        
+        article.artigo3 li:first-child{ color:red;  }
+        article.artigo3 li:nth-child(3){color:slateblue}/*seleciona o terceiro item da lista do artigo 3*/
+        article.artigo3 li:last-child{color:blue}
+    </style>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <article class="artigo1">
+        <h1>Artigo1</h1>
+        <section>
+            <h2>Sessão1</h2>
+            <p>Esta sessão pertence ao artigo 1</p>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>
+                    Segundo item da lista:
+                    <ul>
+                        <li>Primeiro item da lista aninhada</li>
+                        <li>Segundo item da lista aninhada</li>
+                    </ul>
+                </li>
+                <li>Terceiro item da lista</li>
+            </ul>
+        </section>
+    </article>
+    <article class="artigo2"><h1>Artigo 2</h1>
+        <section><h2>Sessão 1</h2>
+        <p>Esta sessão pertence ao Artigo 2</p>
+            <ol>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+            </ol>
+        </section>   
+    </article>
+    <article class="artigo3">
+        <section>
+            <ul>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+                <li>Quarto item</li>
+            </ul>
+        </section>
+
+    </article>
+    <dl>
+        <dt>HTML</dt>
+        <dd>
+            HTML é a linguagem de marcação de textos utilizada
+            para exibir textos como páginas na Internet.
+        </dd>
+        <dt>Navegador</dt>
+        <dd>
+            Navegador é o software que requisita um documento HTML
+            através do protocolo HTTP e exibe seu conteúdo em uma
+            janela.
+        </dd>
+    </dl>
+</body>
+</html>

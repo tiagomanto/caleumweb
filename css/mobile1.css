@@ -1,0 +1,71 @@
+    .container {
+        width: 100%;
+    }
+
+   #vitrini{
+       float:left;
+        width: 350px;
+        margin-right:0;
+        clear:both;
+ 
+   }
+    .container img{
+      width:auto;
+    }
+
+.logotipo {
+   
+    width:50%;  
+    float:left;
+      position:relative;
+}
+
+
+section.busca,
+    section.menu-departamentos{
+        margin-right: 0;
+        width:100%;
+    }
+
+footer img{
+    padding:10px;
+    width:10px;
+}
+
+
+nav.menu-opcoes{
+  
+    position:relative;
+    float:left;
+    clear:both
+
+}
+
+ nav.menu-opcoes ul li { /* aumenta os espaços do menu*/
+            display:in; /* muda o menu pra baixo*/
+            margin: 10px;
+        }
+
+.sacola{
+    display:none;
+}
+
+section.painel {
+        width: 300px;
+        float:left;
+        clear:both;
+    }
+
+        section.painel li {
+            width: 100px;
+              display:block;
+  vertical-align: top;
+  width: 80%;
+  margin: 2px;
+  padding-left:20px;
+  padding-bottom: 10px;
+        }
+
+        section.painel img {
+            width: 100%;
+        }

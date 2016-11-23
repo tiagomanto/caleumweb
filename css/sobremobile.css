@@ -1,0 +1,73 @@
+﻿  header h1 {
+        text-align: center;
+    }
+
+       header h1 img {
+            max-width: 50%;
+        }
+
+    .sacola {
+        display: none;
+    }
+
+    
+
+#centro-distribuicao{
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+  width: 50%;
+  clear:both;
+  
+
+  }
+#centro-distribuicao img {
+    float:left;
+    width: 80%;  
+}
+
+    .titulo2{
+        font-size:22px;
+    }
+
+
+.menu-opcoes {
+        position:static; /* o menu fluira para baixo no estilo.css está absolute que faz ficar à direita no desktop*/
+        text-align: center;
+       
+
+    }
+    .menu-opcoes ul li { /* aumenta os espaços do menu*/
+            display: inline-block;
+            margin: 1px;
+        }
+
+
+.titulo{
+    float:left;
+    width:300px;
+ 
+
+}
+
+#rodape{
+    text-align:center;
+}
+#rodape p {
+    
+    margin: 0px 0;
+    padding: 0px 0;
+    text-align:center;
+}
+    
+}
+#rodape img {
+    width:500px;
+    margin: 10px 0;
+    padding: 10px 0;
+   
+
+    
+     
+
+}

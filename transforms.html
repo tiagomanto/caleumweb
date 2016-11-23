@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+
+#painel header {
+  /* Move o elemento no eixo horizontal  */
+  transform: translateX(10px);
+  transform:translateY(10px);
+  text-align:center;
+  font-weight:bold;
+  font-size:large;
+  text-transform: uppercase;
+
+
+}
+#painel header:before{
+  content: '\2756';  /*trocar o simbolo http://www.alanwood.net/unicode/#links */
+  padding-right: 5px;
+  opacity: 0.4;
+}
+
+
+#painel {
+  /* Move o elemento no eixo vertical */
+  transform: translateY(20px);
+    position:absolute;
+  z-index:1;
+}
+
+#painel li:hover {
+  background-color: rgba(255,255,255,0);
+  box-shadow: 0 0 5px #333;
+  transition: box-shadow 0.7s;
+ -webkit-transition: all 1s cubic-bezier(.42, 0, 1, 1); 
+-moz-transition: all 1s cubic-bezier(.42, 0, 1, 1); 
+  transform: rotate(-30deg);
+}
+
+
+footer {
+  /* Move o elemento nos dois eixos (X, Y) */
+  transform: translate(0px, -10px);
+
+  text-align:center;
+}
+
+#menu-departamentos {
+  position:relative;
+  z-index:1;
+  transform: rotate(-10deg);
+  
+}
+
+#novidades{
+      float: left; /* painel novidades flutua a esquerda*/
+      background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+/*USAR DIVS ANTES PARA TESTAR*/
+                #novidades li {
+                  /* Alterar a escala total do elemento */
+                  display: inline-block;
+                  transform: scale(1);
+                }
+#mais-vendidos{
+      float: right; /* painel mais vendidos flutua a direita*/
+      background: linear-gradient(#dcdcf5, #f4bebe);
+}
+                /*USAR DIVS ANTES PARA TESTAR*/
+                #mais-vendidos li {
+                    display: inline-block;
+                  /* Alterar a escala vertical e horizontal do elemento */
+                  transform: scale(1, 1);
+                }
+
+    </style>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>Cabeçalho Principal </header>
+    <div id="painel">
+        
+        
+        <div id="novidades">
+            <header>Novidades</header>
+            <ul>
+                <li><img src="img/produtos/foto1-azul.png" /></li>
+                <li><img src="img/produtos/foto1-verde.png" /></li>
+        </ul>
+            <footer>Descontos de 10% para compras até R$ 100,00</footer>
+        </div>
+
+
+        <div id="mais-vendidos">
+            <header>Mais Vendidos</header>
+            <ul>
+                <li><img src="img/produtos/foto1-rosa.png" /></li>
+                <li><img src="img/produtos/foto1-rosa.png" /></li>
+            </ul>
+            <footer>Descontos de 10% para compras até R$ 100,00</footer>
+         </div>
+       
+        </div>
+   
+    
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿    .container {
+        width: 96%;
+    }
+
+    header h1 {
+        text-align: left;
+        position:relative;
+       
+        
+    }
+
+    header h1 img {
+         float:left;
+
+        
+     }
+
+.logotipo{
+    margin: 0;
+    float:left;
+    position: absolute;
+    top: 1px;
+    bottom: 10px;
+   padding-bottom:30px;         
+   max-width: 60%;
+    
+}
+    .sacola {
+        display: none;
+    }
+
+    nav.menu-opcoes {
+        position: relative; /* o menu fluira para baixo no estilo.css está absolute que faz ficar à direita no desktop*/
+        float:left;
+        clear:both;
+        
+    }
+
+        nav.menu-opcoes ul li { /* aumenta os espaços do menu*/
+            display:inline-block;
+            margin: 5px;
+        }
+
+  
+
+    section.busca,
+    section.menu-departamentos,
+    section.destaque img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    section.painel {
+        width: auto;
+        float:left;
+        clear:both;
+    }
+
+        section.painel li {
+            width: 100%;
+            display:block;
+            /* coloca os itens dos paineis lado a lado*/
+         vertical-align: top;
+        
+        transition:0.7s; /* habilita o efeito na volta apos o hover*/
+        margin: 2px;
+        padding-bottom: 10px;
+
+        }
+
+        section.painel img {
+            width: 100%;
+        }
+
+
+    .play,
+    .pause {
+        top: auto;
+        right: auto;
+        left: 10px;
+        bottom: 10px;
+    }
+    @media (min-width: 700px) {
+  header h1 {
+    margin: 5px 0;
+  }
+  .menu-departamentos {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-departamentos nav > ul {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+    @media (min-width: 412px) {
+
+  header h1 { 
+    text-align: left;
+  }
+  .logotipo{
+      float:right;
+      position:relative;
+  }
+  .sacola{
+      display:none;
+  }
+  .menu-opcoes {
+    position: relative;
+   
+  }
+  .sacola {
+    display: block;
+  }
+  .painel li {
+    width: 15%;
+  }
+  .busca, .menu-departamentos {
+    margin-right: 1%;
+    width: 30%;
+  }
+  .menu-departamentos nav > ul {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+  .destaque img {
+    width: 69%;
+  }
+}

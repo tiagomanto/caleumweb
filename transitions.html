@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+  #teste {
+  position: relative;
+  top: 0;
+  color: black;
+
+  }
+    #teste:hover {
+  top: 30px;
+  transition:top 2s, color 1s ease;
+    }
+
+   #teste2 {
+  position: relative;
+  top: 0;
+  color: orangered;
+
+  }
+    #teste2:hover{ /*simular efeitos de transição http://www.roblaplaca.com/examples/bezierBuilder */
+   top:60px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+       -o-transition: all 2s ease;
+          transition: all 2s ease;
+}
+
+    #teste3 {
+  position: relative;
+  bottom: 0px;
+  color: orangered;
+
+  }
+
+    #teste3:hover{
+        bottom:20px;
+        -webkit-transition: all 1s cubic-bezier(.42, 0, 1, 1); 
+        -moz-transition: all 1s cubic-bezier(.42, 0, 1, 1); 
+    }
+
+    </style>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="teste">
+        <p>Teste </p>
+    </div>
+
+    <div id="teste2"> <p>teste 2 transição</p> </div>
+    <div id="teste3"> <p>teste 3 transição</p> </div>
+</body>
+</html>
